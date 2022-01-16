@@ -5,6 +5,7 @@ public class Ubezpieczenie {
 	private String NumerPolisy;
 	Samochod Samochod;
 
+
 	public Ubezpieczenie() {
 		throw new UnsupportedOperationException();
 	}

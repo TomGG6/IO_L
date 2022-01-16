@@ -4,6 +4,7 @@ public class Klient {
 	private String Imie;
 	private String Nazwisko;
 
+
 	public Klient() {
 		throw new UnsupportedOperationException();
 	}

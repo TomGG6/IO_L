@@ -8,7 +8,8 @@ public class Aplikacja {
 		throw new UnsupportedOperationException();
 	}
 
-	// TODO
+
+	// TODO - Marcin
 	public List<Samochod> sprawdzenieDostepnosciSamochodow() {
 
 	}

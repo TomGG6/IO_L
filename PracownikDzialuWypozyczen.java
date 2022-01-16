@@ -1,9 +1,20 @@
 public class PracownikDzialuWypozyczen extends Pracownik {
 
-	// TODO
+	// TODO - Mateusz
 	public List<Samochod> sprawdzenieDostêpnoœciSamochodow(Samochod wymagania) {
 
+		List<Samochod> lista = new ArrayList<Samochod>();
+
+		for (Samochod samochod:
+			 Database.listaWypozyczen) {
+
+			if (samochod.equals(wymagania)) {
+				lista.add(samochod);
+			}
+		}
+		return lista;
 	}
+
 
 	public void dodajWypozyczenie(Samochod samochod, Klient klient) {
 		throw new UnsupportedOperationException();
@@ -24,7 +35,8 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 		throw new UnsupportedOperationException();
 	}
 
-	// TODO
+
+	// TODO - Marcin
 	public List<Samochod> przeszukajListeSamochodow(Samochod filtr) {
 		throw new UnsupportedOperationException();
 	}
@@ -40,12 +52,13 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 	}
 
 
+	// TODO - Tomasz
 	public Wypozyczenie szukajWypozyczenia(int ID) {
 		throw new UnsupportedOperationException();
 	}
 
 
-	// TODO
+	// TODO - Tomasz
 	public List<String> przeszukajListeWypozyczen(List<String> numeryRejestracyjne) {
 		throw new UnsupportedOperationException();
 	}

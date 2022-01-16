@@ -6,6 +6,7 @@ public class Wypozyczenie {
 	private Date DataKoniec;
 	private Klient NumerPrawaJazdy;
 
+
 	public Wypozyczenie() {
 		throw new UnsupportedOperationException();
 	}

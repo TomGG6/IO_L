@@ -14,8 +14,15 @@ public class Samochod {
 	private Ubzpieczenie Ubezpieczeie;
 
 	// TODO
-	public Samochod() {
-		throw new UnsupportedOperationException();
+	public Samochod(String NumerRejestracyjny, String Producent, String Model, Date RokProdukcji, boolean SkrzyniaManualna) {
+
+		this.NumerRejestracyjny = NumerRejestracyjny;
+		this.Producent = Producent;
+		this.Model = Model;
+		this.RokProdukcji = RokProdukcji;
+		this.SkrzyniaManualna = SkrzyniaManualna;
+		this.Gotowosc = false;
+		this.Wypozyczony = false;
 	}
 
 
@@ -24,8 +31,35 @@ public class Samochod {
 	}
 
 
-	public void dodajUbezpieczenie(Ubezpieczenie ubiezpieczenie) {
-		throw new UnsupportedOperationException();
+	// TODO - Mateusz
+	public void dodajUbezpieczenie(Ubezpieczenie ubezpieczenie) {
+
+		if (ubezpieczenie != null) {
+			this.Ubezpieczeie = ubezpieczenie;
+		}
+		else {
+			System.out.println("ubezpieczenie is null");
+		}
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			return false;
+		}
+		if (obj instanceof Samochod) {
+			Samochod other = (Samochod) obj;
+
+			return (this.NumerRejestracyjny.equals(other.NumerRejestracyjny) || other.NumerRejestracyjny == null) &&
+					(this.Producent.equals(other.Producent) || other.Producent == null) &&
+					(this.Model.equals(other.Model) || other.Model == null) &&
+					(this.RokProdukcji.equals(other.RokProdukcji) || other.RokProdukcji == null) &&
+					(this.SkrzyniaManualna.equals(other.SkrzyniaManualna) || other.SkrzyniaManualna == null) &&
+					(this.OlejSilnikowy.equals(other.OlejSilnikowy) || other.OlejSilnikowy == null)
+
+		}
+		return false;
 	}
 
 }

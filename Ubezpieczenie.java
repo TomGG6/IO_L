@@ -6,7 +6,6 @@ public class Ubezpieczenie {
 	Samochod Samochod;
 
 	public Ubezpieczenie() {
-		// TODO - implement Ubezpieczenie.Ubezpieczenie
 		throw new UnsupportedOperationException();
 	}
 

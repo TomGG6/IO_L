@@ -7,7 +7,6 @@ public class Wypozyczenie {
 	private Klient NumerPrawaJazdy;
 
 	public Wypozyczenie() {
-		// TODO - implement Wypozyczenie.Wypozyczenie
 		throw new UnsupportedOperationException();
 	}
 

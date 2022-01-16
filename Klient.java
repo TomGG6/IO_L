@@ -5,7 +5,6 @@ public class Klient {
 	private String Nazwisko;
 
 	public Klient() {
-		// TODO - implement Klient.Klient
 		throw new UnsupportedOperationException();
 	}
 

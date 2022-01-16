@@ -13,26 +13,18 @@ public class Samochod {
 	private boolean Wypozyczony;
 	private Ubzpieczenie Ubezpieczeie;
 
+	// TODO
 	public Samochod() {
-		// TODO - implement Samochod.Samochod
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param nrRejestracyjny
-	 */
+
 	public void sprzedajSamochod(String nrRejestracyjny) {
-		// TODO - implement Samochod.sprzedajSamochod
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param ubiezpieczenie
-	 */
+
 	public void dodajUbezpieczenie(Ubezpieczenie ubiezpieczenie) {
-		// TODO - implement Samochod.dodajUbezpieczenie
 		throw new UnsupportedOperationException();
 	}
 

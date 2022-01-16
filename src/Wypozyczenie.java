@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class Wypozyczenie {
 
 	private Samochod Samochod;

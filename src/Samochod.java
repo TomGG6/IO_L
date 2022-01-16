@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class Samochod {
 
 	private String NumerRejestracyjny;
@@ -13,9 +11,28 @@ public class Samochod {
 	private String Uwagi;
 	private boolean Gotowosc;
 	private boolean Wypozyczony;
+	private Ubzpieczenie Ubezpieczeie;
 
 	public Samochod() {
 		// TODO - implement Samochod.Samochod
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param nrRejestracyjny
+	 */
+	public void sprzedajSamochod(String nrRejestracyjny) {
+		// TODO - implement Samochod.sprzedajSamochod
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param ubiezpieczenie
+	 */
+	public void dodajUbezpieczenie(Ubezpieczenie ubiezpieczenie) {
+		// TODO - implement Samochod.dodajUbezpieczenie
 		throw new UnsupportedOperationException();
 	}
 

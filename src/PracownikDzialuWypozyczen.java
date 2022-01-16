@@ -1,15 +1,11 @@
-import java.util.List;
-import java.util.Map;
-
 public class PracownikDzialuWypozyczen extends Pracownik {
 
 	/**
 	 * 
 	 * @param wymagania
 	 */
-	public List<Samochod> sprawdzenieDostêpnoœciSamochodu(Map<String, String> wymagania) {
-		// TODO - implement PracownikDzialuWypozyczen.sprawdzenieDostêpnoœciSamochodu
-		throw new UnsupportedOperationException();
+	public List<Samochod> sprawdzenieDostêpnoœciSamochodow(Samochod wymagania) {
+
 	}
 
 	/**
@@ -70,20 +66,10 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 
 	/**
 	 * 
-	 * @param ID
-	 */
-	public void podanieID(String ID) {
-		// TODO - implement PracownikDzialuWypozyczen.podanieID
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
 	 * @param dane
 	 */
-	public void podanieImieniaNazwiska(String[] dane) {
-		// TODO - implement PracownikDzialuWypozyczen.podanieImieniaNazwiska
-		throw new UnsupportedOperationException();
+	public void stworzKlienta(String[] dane) {
+
 	}
 
 	/**
@@ -92,6 +78,15 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 	 */
 	public Wypozyczenie szukajWypozyczenia(int ID) {
 		// TODO - implement PracownikDzialuWypozyczen.szukajWypozyczenia
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param numeryRejestracyjne
+	 */
+	public List<String> przeszukajListeWypozyczen(List<String> numeryRejestracyjne) {
+		// TODO - implement PracownikDzialuWypozyczen.przeszukajListeWypozyczen
 		throw new UnsupportedOperationException();
 	}
 

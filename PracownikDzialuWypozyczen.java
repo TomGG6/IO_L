@@ -1,7 +1,7 @@
 public class PracownikDzialuWypozyczen extends Pracownik {
 
 	// TODO - Mateusz
-	public List<Samochod> sprawdzenieDostêpnoœciSamochodow(Samochod wymagania) {
+	public List<Samochod> sprawdzenieDostÃªpnoÅ“ciSamochodow(Samochod wymagania) {
 
 		List<Samochod> lista = new ArrayList<Samochod>();
 
@@ -31,7 +31,7 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 	}
 
 
-	public float obliczOplate(float Stawka, int IloœæDni) {
+	public float obliczOplate(float Stawka, int IloÅ“Ã¦Dni) {
 		throw new UnsupportedOperationException();
 	}
 
@@ -54,13 +54,25 @@ public class PracownikDzialuWypozyczen extends Pracownik {
 
 	// TODO - Tomasz
 	public Wypozyczenie szukajWypozyczenia(int ID) {
-		throw new UnsupportedOperationException();
+		for(Wypozyczenie szukane: Database.listaWypozyczen){
+			if(szukane.ID == ID){
+				return szukane;
+			}
+		}
 	}
 
 
 	// TODO - Tomasz
-	public List<String> przeszukajListeWypozyczen(List<String> numeryRejestracyjne) {
-		throw new UnsupportedOperationException();
+	public List<Wypozyczenie> przeszukajListeWypozyczen(List<String> numeryRejestracyjne) {
+		List<Wypozyczenie> lista = new ArrayList<Wypozyczenie>();
+		for(Wypozyczenie szukane: Database.listaWypozyczen){
+			for(String szukaneRejestracje: numeryRejestracyjne){
+				if(szukane.Samochod.nrRejestracyjny == szukaneRejestracje){
+					lista.add(szukane);
+				}
+			}
+		}
+		return lista;
 	}
 
 }
